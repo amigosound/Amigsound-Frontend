@@ -1,8 +1,8 @@
-import { useState, Suspense } from "react";
+// import { useState, Suspense } from "react";
 import "./App.css";
-import { useEagerConnect, useInactiveListener } from "./hooks/useEagerConnect";
+// import { useEagerConnect, useInactiveListener } from "./hooks/useEagerConnect";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header, Footer, ScrollToTop } from "./components";
+import { Footer, ScrollToTop } from "./components";
 import {
   Home,
   Signup,
@@ -50,9 +50,9 @@ import {
 } from "./screens";
 
 function App() {
-  const [errorMessage, setErrorMessage] = useState();
-  useEagerConnect(setErrorMessage);
-  useInactiveListener();
+  // const [errorMessage, setErrorMessage] = useState();
+  // useEagerConnect(setErrorMessage);
+  // useInactiveListener();
 
   return (
     <div className="App">

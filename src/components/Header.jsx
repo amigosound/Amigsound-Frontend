@@ -1,18 +1,18 @@
 import "../assets/css/style.css";
 import "../assets/css/responsive.css";
-import { Form, Navbar, Nav } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
+// import { Form, Navbar, Nav } from "react-bootstrap";
+// import { useTranslation } from "react-i18next";
 
-import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
-import Onboard from "bnc-onboard";
-import { ethers } from "ethers";
-import { useEffect, useState } from "react";
+// import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
+// import Onboard from "bnc-onboard";
+// import { ethers } from "ethers";
+import { useState } from "react";
 import imageUrl from "../utils/ImageUrl";
 import { Link, useLocation } from "react-router-dom";
-const INFURA_ID = "a3573077-8a08-483c-b4a0-6a4544c59985";
+// const INFURA_ID = "a3573077-8a08-483c-b4a0-6a4544c59985";
 function Header() {
-  const { t, i18n } = useTranslation();
-  const [lang, setLanguage] = useState("en");
+  // const { t, i18n } = useTranslation();
+  // const [lang, setLanguage] = useState("en");
   const location = useLocation();
   // const handlechange = (e) => {
   //   setLanguage(e.target.value);
@@ -104,7 +104,7 @@ function Header() {
     <>
       <div
         className={`nav-bar ${
-          location.pathname == "/" ? "home-header" : "custom-border"
+          location.pathname === "/" ? "home-header" : "custom-border"
         } `}
       >
         <div className="logo logo-bg-color">

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import imageUrl from "../utils/ImageUrl";
-import { Header, AddPlayListModal } from "./index";
+import { AddPlayListModal } from "./index";
 import { Link, useLocation } from "react-router-dom";
 function Sidebar() {
   const [open, setOpen] = useState(true);

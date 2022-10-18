@@ -913,10 +913,46 @@ tr.space-under > td {
 .player {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   align-items: center;
   background-color: #000000;
   position: relative;
+  margin-top: 15px;
+}
+
+/* ========================rhap-ui-for-player===================== */
+.rhap_container {
+  background-color: transparent !important;
+  width: 100% !important;
+  position: relative !important;
+  padding: 20px 15px !important;
+}
+.rhap_main {
+  width: 100% !important;
+}
+.rhap_progress-section {
+  display: flex;
+  flex: 3 1 auto;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  top: -25px;
+  left: 0;
+}
+.rhap_progress-indicator {
+  display: none !important;
+}
+.rhap_progress-filled {
+  background-color: #ff003a !important;
+}
+.rhap_progress-bar-show-download {
+  background-color: #555555 !important;
+}
+.rhap_progress-bar {
+  height: 4px !important;
+}
+.rhap_download-progress {
+  background-color: #dddddd;
 }
 .player .fa-circle-play {
   color: var(--grey);
@@ -1013,14 +1049,41 @@ tr.space-under > td {
 .functions {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
   align-items: center;
+  width: 45%;
 }
+
 .functions img {
   padding-right: 20px;
 }
 .functions p {
-  color: #555555;
+  color: #555;
+}
+.rhap_volume-controls {
+  color: #555 !important;
+  font-family: raleway;
+}
+.rhap_time {
+  font-size: 18px !important;
+  letter-spacing: 1px;
+}
+.rhap_volume-controls .bar p {
+  color: #555 !important;
+}
+.rhap_volume-indicator {
+  background: #ff003a;
+}
+.rhap_volume-container {
+  margin-right: 10px;
+}
+.rhap_progress-container {
+  margin: 0 !important;
+}
+.rhap_volume-indicator {
+  background: #ff003a !important;
+}
+.rhap_time {
+  width: 60px !important;
 }
 .duration-line {
   height: 50px;
@@ -1168,6 +1231,21 @@ tr.space-under > td {
 }
 .space-under .fa-pause {
   margin-left: 7px;
+}
+
+/* ==========================player-row=========================== */
+.space-under .rhap_container {
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.space-under .rhap_container .rhap_volume-controls {
+  position: absolute;
+  right: -22px;
+  transform: translate(1000%, -140%);
+  margin-top: 22px;
+  width: 90px;
+  color: white !important;
 }
 
 .blur-bg {

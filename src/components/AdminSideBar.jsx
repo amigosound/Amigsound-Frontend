@@ -25,7 +25,7 @@ function AdminSideBar() {
           </div>
 
           <div class="profile">
-            <a href="">
+            <a href="#">
               <img src={imageUrl("profile.png")} alt="" />
             </a>
           </div>

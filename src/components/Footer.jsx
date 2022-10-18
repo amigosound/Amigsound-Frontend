@@ -68,6 +68,7 @@ function Footer() {
                     <a
                       target={"_blank"}
                       href="mailto:officialamigosound@gmail.com"
+                      rel="noreferrer"
                     >
                       {" "}
                       Subscribe
@@ -121,17 +122,25 @@ function Footer() {
               <div className="icon-list">
                 <h5 className="mb-3">Follow Us</h5>
                 <div className="icons-group">
-                  <a href={"https://twitter.com/Amigo_Sound"} target="_blank">
+                  <a
+                    href={"https://twitter.com/Amigo_Sound"}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fa-brands fa-twitter custom-tt"></i>
                   </a>
 
-                  <a href={"https://t.me/AmigoSound"} target="_blank">
+                  <a
+                    href={"https://t.me/AmigoSound"}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {/* <i className="fa-brands fa-telegram custom-fb"></i> */}
 
                     <img
                       className="custom-telegram"
                       src={imageUrl("telegram.png")}
-                      alt=""
+                      alt="tele.png"
                     />
                   </a>
                   <a href={"https://discord.gg/7tKHfra3"} target="_blank">
@@ -140,12 +149,14 @@ function Footer() {
                   <a
                     href={"https://medium.com/@officialamigosound"}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fa-brands fa-medium custom-yb custom-md"></i>
                   </a>
                   <a
                     href={"https://www.instagram.com/amigosound/"}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fa-brands fa-instagram custom-in"></i>
                     {/* <img
@@ -159,6 +170,7 @@ function Footer() {
                       "https://www.facebook.com/people/AmigoSound/100086619361685/"
                     }
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fa-brands fa-facebook custom-tt"></i>
                   </a>

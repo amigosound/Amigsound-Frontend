@@ -1,1 +1,1 @@
-# Amigo Sound Blockchain app
+# React App with EthersJS
