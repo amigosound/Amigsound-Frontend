@@ -5,20 +5,21 @@ function HomeWelcome() {
     <>
       <section className="text-home ">
         <div className="container">
-          <div className="welcome-desc">
-            <h2 className="welcome-back">WELCOME</h2>
-            <h3 className="welcome-front">WELCOME</h3>
-            <h3 className="welcome-front amigo"> TO AMIGO SOUND!</h3>
-            <p className="mt-5">
-              This is the next big thing in the music streaming world. Not just
-              for artists looking <br />
-              to build a fan base, but for fans and music lovers hunting for
-              new, exciting and
-              <br /> exclusive streams – including a bunch not available
-              anywhere else.
-            </p>
+          <div className="container-fluid">
+            <div className="welcome-desc">
+              <h2 className="welcome-back">WELCOME</h2>
+              <h3 className="welcome-front">WELCOME</h3>
+              <h3 className="welcome-front amigo"> TO AMIGO SOUND!</h3>
+              <p className="mt-4">
+                This is the next big thing in the music streaming world. Not
+                just for artists looking <br />
+                to build a fan base, but for fans and music lovers hunting for
+                new, exciting and
+                <br /> exclusive streams – including a bunch not available
+                anywhere else.
+              </p>
+            </div>
           </div>
-
           <div className="container-fluid">
             <div className="row align-items-end">
               <div className="col-lg-6">
@@ -298,7 +299,7 @@ function HomeWelcome() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="powered">
+                <div className="powered fire">
                   <img src={imageUrl("flame.png")} alt="" />
                 </div>
               </div>

@@ -74,147 +74,91 @@ function ArtistInside() {
                 </div>
               </div>
             </div>
-
-            <div className="search-title">
-              <div className="text-title">
-                <p>Hip Hop USA (25)</p>
+            <div className="container player-container">
+              <div className="search-title">
+                <div className="text-title active-color">
+                  <p>Hip Hop USA (25)</p>
+                </div>
+                <div className="text-title">
+                  <p>Albums (4)</p>
+                </div>
+                <div className="text-title">
+                  <p>Playlists (0)</p>
+                </div>
+                <div className="text-title">
+                  <p>Similar Artists (10)</p>
+                </div>
+                <div className="input-title">
+                  <i className="fa fa-magnifying-glass"></i>
+                  <input
+                    className="box-title"
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Search within tracks"
+                  />
+                </div>
               </div>
 
-              <div className="input-title">
-                <i className="fa fa-magnifying-glass"></i>
-                <input
-                  className="box-title"
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder="Search within tracks"
-                />
-              </div>
-            </div>
+              <PlaySong />
 
-            {/* <table className="table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>TITLE</th>
-                  <th>ARTIST</th>
-                  <th></th>
-                  <th className="time-set">TIME</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Array(6)
-                  .fill(0)
-                  .map((_, item) => (
-                    <tr className="space-under">
-                      <td>
-                        <i className="fa-solid fa-play fff"></i>
-                      </td>
-                      <td>
-                        <div className="song-title-main">
-                          <img src={imageUrl("hiphopp.png")} alt="music.png" />
-                          <div className="song-text">
-                            <span>Songs by Akcent</span>
-                            <div className="song-desc">
-                              <p>
-                                <i className="fa-solid fa-headphones"></i>{" "}
-                                223.4k
-                              </p>
-                              <p>
-                                <i className="fa-solid fa-heart"></i>2,500
-                              </p>
-                              <p>
-                                <i className="fa-solid fa-share-nodes"></i>400
-                              </p>
-                              <p>
-                                <i className="fa-solid fa-comment-dots"></i>800
-                              </p>
+              <div className="main-slide">
+                <div id="slideshow" className="playlist-slider-show">
+                  <div className="text-liked">
+                    <p>You May Also Like</p>
+                  </div>
+                  <div className="main-slider">
+                    <div className="slick img-pos">
+                      <SmallSlider />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="main-slide">
+                <div id="slideshow" className="playlist-slider-show2">
+                  <div className="text-liked">
+                    <p>Suggested Artists</p>
+                  </div>
+                  <div className="main-slider">
+                    <div className="slick img-pos">
+                      <Slider {...sliderSetting}>
+                        {Array(14)
+                          .fill(0)
+                          .map((_, ind) => (
+                            <div>
+                              <img
+                                src={imageUrl("unknown.png")}
+                                alt="music.png"
+                              />
+                              <p>Jokhay</p>
                             </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>Akcent</td>
-
-                      <td>
-                        <div className="equipments">
-                          <img
-                            src={imageUrl("music-logo.png")}
-                            alt="music.png"
-                          />
-                          <img src={imageUrl("nodes.png")} alt="music.png" />
-                          <img
-                            src={imageUrl("downloads.png")}
-                            alt="music.png"
-                          />
-
-                          <div className="volume">
-                            <i className="fa-solid fa-volume-high"></i>
-                            <div className="volume-line"></div>
-                            <i className="fa-solid fa-volume-xmark"></i>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <span>04:20</span>
-                      </td>
-                    </tr>
-                  ))}
-              </tbody>
-            </table> */}
-            <PlaySong />
-          </div>
-          <div className="main-slide">
-            <div id="slideshow" className="playlist-slider-show">
-              <div className="text-liked">
-                <p>You May Also Like</p>
-              </div>
-              <div className="main-slider">
-                <div className="slick img-pos">
-                  <SmallSlider />
+                          ))}
+                      </Slider>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="main-slide">
-            <div id="slideshow" className="playlist-slider-show2">
-              <div className="text-liked">
-                <p>Suggested Artists</p>
-              </div>
-              <div className="main-slider">
-                <div className="slick img-pos">
-                  <Slider {...sliderSetting}>
-                    {Array(14)
-                      .fill(0)
-                      .map((_, ind) => (
-                        <div>
-                          <img src={imageUrl("unknown.png")} alt="music.png" />
-                          <p>Jokhay</p>
-                        </div>
-                      ))}
-                  </Slider>
+              <div className="comments">
+                <div className="text-comment">
+                  <p>Comments</p>
+                </div>
+                <div className="form-floating ">
+                  <textarea
+                    className="form-control area-form"
+                    placeholder="Please share your thoughts"
+                    id="floatingTextarea2"
+                    style={{ height: "100px" }}
+                  ></textarea>
+                  {/* <label for="floatingTextarea2">Please share your thoughts</label> */}
+                </div>
+                <div className="emojis">
+                  <img src={imageUrl("emoji.png")} alt="music.png" />
+                  <Link to="#">Comments</Link>
                 </div>
               </div>
+              <CommentList />
             </div>
           </div>
-          <div className="comments">
-            <div className="text-comment">
-              <p>Comments</p>
-            </div>
-            <div className="form-floating ">
-              <textarea
-                className="form-control area-form"
-                placeholder="Please share your thoughts"
-                id="floatingTextarea2"
-                style={{ height: "100px" }}
-              ></textarea>
-              {/* <label for="floatingTextarea2">Please share your thoughts</label> */}
-            </div>
-            <div className="emojis">
-              <img src={imageUrl("emoji.png")} alt="music.png" />
-              <Link to="#">Comments</Link>
-            </div>
-          </div>
-          <CommentList />
         </div>
       </div>
       <Player img={"hiphopp.png"} />

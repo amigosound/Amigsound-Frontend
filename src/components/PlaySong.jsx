@@ -8,7 +8,9 @@ function PlaySong() {
     <table className="table">
       <thead>
         <tr>
-          <th>#</th>
+          <th>
+            <span className="mx-3"> #</span>
+          </th>
           <th>TITLE</th>
           <th>ARTIST</th>
           <th></th>

@@ -4,13 +4,14 @@ import imageUrl from "../utils/ImageUrl";
 function CommentList() {
   return (
     <>
+      {" "}
+      <div className="comment-list-text mb-4">
+        <p>New Comments (4)</p>
+      </div>
       {Array(4)
         .fill(0)
         .map((_, ind) => (
           <div className="comments-list">
-            <div className="comment-list-text">
-              <p>New Comments (4)</p>
-            </div>
             <div className="comment-content">
               <div className="comment-image">
                 <img src={imageUrl("comment.png")} alt="music.png" />

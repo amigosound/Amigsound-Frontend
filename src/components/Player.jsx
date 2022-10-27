@@ -69,8 +69,8 @@ function Player({ img }) {
       {/* <p>currentMusicIndex: {currentMusicIndex}</p> */}
 
       <AudioPlayer
-        autoPlay
         // src={Naat}
+        autoPlay={false}
         src={playlist[currentMusicIndex].src}
         className={"player"}
         autoPlayAfterSrcChange={true}

@@ -8,6 +8,15 @@ function PlaySongRow({ data }) {
   const [play, setPlay] = useState(false);
   const [volumeIncrease, setVolumeIncrease] = useState(false);
   const [volumeDecrease, setVolumeDecrease] = useState(false);
+
+  const audioPlay = (e) => {
+    // let totalTimeOfSong =
+    //   Math.floor((e.target.duration / 60).toFixed(1)) +
+    //   " : " +
+    //   (e.target.duration / 60).toFixed(3);
+    // console.log(totalTimeOfSong);
+    console.log(Math.round(e.target.duration));
+  };
   // let audioElem = document.getElementById("audio").target;
   // console.log(audioElem);
   return (
@@ -19,7 +28,7 @@ function PlaySongRow({ data }) {
           className={"player"}
           autoPlayAfterSrcChange={true}
           showJumpControls={false}
-          customAdditionalControls={[]}
+          customAdditionalControls={[false]}
           customProgressBarSection={[]}
           customVolumeControls={[
             // RHAP_UI.VOLUME,
@@ -27,7 +36,8 @@ function PlaySongRow({ data }) {
             RHAP_UI.DURATION,
           ]}
           // id="audioElem"
-          onPlay={(e) => console.log("onPlay")}
+          onPlay={audioPlay}
+          id="track"
         ></AudioPlayer>
         {/* <i
           className={`fa-solid  ${play ? "fa-pause fff" : "fa-play fff"}`}
@@ -80,7 +90,7 @@ function PlaySongRow({ data }) {
           </div> */}
         </div>
       </td>
-      <td>{/* <span>04:00</span> */}</td>
+      <td>{/* <span id="tracktime">04:00</span> */}</td>
     </tr>
   );
 }

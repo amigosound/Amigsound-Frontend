@@ -48,6 +48,10 @@ body li a {
 .active {
   background-color: var(--primary-color) !important;
 }
+.player-container {
+  width: 95%;
+  margin: 0;
+}
 #banner {
   position: relative;
   width: 100%;
@@ -465,6 +469,12 @@ body li a {
   display: flex;
   justify-content: center;
 }
+.powered img {
+  width: 250px;
+}
+.powered.fire img {
+  width: auto;
+}
 .powered-desc {
   display: flex;
   justify-content: space-between;
@@ -867,6 +877,10 @@ header {
   margin: 0;
   padding-left: 10px;
 }
+.song-text p i {
+  margin: 0px 5px;
+  color: var(--grey);
+}
 .equipments img {
   width: 25px;
   padding-bottom: 10px;
@@ -1103,7 +1117,10 @@ tr.space-under > td {
   font-family: Arial, Helvetica, sans-serif;
 }
 .choices {
-  padding: 10px 0px;
+  padding: 5px 0px;
+}
+.table-artist {
+  margin-top: 30px;
 }
 .choices a {
   text-decoration: none;
@@ -1134,7 +1151,7 @@ tr.space-under > td {
 }
 .table-artist tbody td {
   padding-right: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .playlist-table {
   margin-top: 50px;
@@ -1241,11 +1258,14 @@ tr.space-under > td {
 
 .space-under .rhap_container .rhap_volume-controls {
   position: absolute;
-  right: -22px;
+  right: 0;
   transform: translate(1000%, -140%);
   margin-top: 22px;
   width: 90px;
   color: white !important;
+}
+.space-under .rhap_additional-controls {
+  display: none;
 }
 
 .blur-bg {
@@ -1259,6 +1279,7 @@ tr.space-under > td {
 .search-title {
   margin-top: 50px;
   padding: 0 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -1287,7 +1308,7 @@ tr.space-under > td {
 }
 .main-slide {
   display: flex;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 .main-slide .left-div {
   width: 200px;
@@ -1484,6 +1505,12 @@ tr.space-under > td {
 .text-title h5 {
   margin-right: 10px;
   color: #808080;
+}
+.text-title p {
+  color: #808080;
+}
+.text-title.active-color p {
+  color: white !important;
 }
 .text-title h5.active {
   color: white;

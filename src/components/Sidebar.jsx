@@ -83,7 +83,10 @@ function Sidebar() {
                 <Link
                   to="/artist"
                   className={`${
-                    location.pathname === "/artist" ? "active" : ""
+                    location.pathname === "/artist" ||
+                    location.pathname === "/artist-inside"
+                      ? "active"
+                      : ""
                   }`}
                 >
                   <img src={imageUrl("artist.png")} alt="" />
@@ -109,7 +112,7 @@ function Sidebar() {
                   }`}
                 >
                   <img src={imageUrl("playlist.png")} alt="" />
-                  <span> playlist</span>
+                  <span> playlists</span>
                 </Link>
               </li>
               <li>
